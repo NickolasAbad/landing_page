@@ -1,12 +1,13 @@
+@use '../../styles/variaveis.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
 .footer {
     height: 50px;
-    border-top: 1px solid #222;
+    border-top: 1px solid $corFooter;
     text-align: center;
 
     &__text {
-        font-size: 12px;
-        font-weight: 300;
-        color: #ccc;
-        padding: 16px;
+        @include textStyle($corBorderFooter, 12px, 300);
+        @include padding(16px, 16px, 16px, 16px);
     }
 }

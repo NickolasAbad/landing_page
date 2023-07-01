@@ -1,13 +1,16 @@
+@use '../../styles/variaveis.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
 .who {
-    padding-bottom: 40px;
+    @include padding(0, 0, 40px);
 
     &__content {
-        background-color: #151515;
-        border: 2px solid #1f1f1f;
+        background-color: $corDivBG;
+        border: 2px solid $corBorda;
         border-radius: 24px;
         display: grid;
         grid-template-columns: 1fr 3fr;
-        padding: 24px;
+        @include padding(24px, 24px, 24px, 24px);
     }
     
     &__text {
@@ -15,28 +18,20 @@
     }
 
     &__subtitle {
-        color: #FFCC00;
-        font-size: 20px;
-        font-weight: 700;
+        @include textStyle($corPrincipal, 20px, 700);
         margin-top: 24px;
     }
 
     &__title {
-        color: #fff;
-        font-size: 32px;
-        font-weight: 700;
+        @include textStyle($corSecundaria, 32px, 700);
     }
 
     &__description {
-        color: #fff;
-        font-size: 16px;
-        font-weight: 200;
+        @include textStyle($corSecundaria, 16px, 200);
         margin-bottom: 16px;
     }
 
     &__info {
-        color: #A7A7A7;
-        font-size: 16px;
-        font-weight: 400;
+        @include textStyle($corDescricao, 16px, 400);
     }
 }

@@ -1,4 +1,4 @@
-import styles from './index.module.scss'
+import styles from './_index.module.scss'
 import memojiImg from './assets/Memoji.png'
 import clsx from 'clsx/dist/clsx.m'
 import { useState } from 'react'

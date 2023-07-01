@@ -1,9 +1,12 @@
+@use '../../styles/variaveis.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
 .home {
     min-height: 100vh;
 }
 
 .hero {
-    padding-top: 200px;
+    @include padding(200px);
     display: block;
 
     &__button {
@@ -15,19 +18,17 @@
     }
 
     &__content {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 100px;
+        @include grid-setup(0, 100px) {
+            grid-template-columns: 2fr 1fr
+        }
     }
 
     &__title {
-        font-size: 40px;
-        font-weight: bold;
-        color: #fff;
+        @include textStyle($corSecundaria, 40px, bold);
         width: 100%;
 
         &__Highlight {
-        color: #FFCC00;
+        color: $corPrincipal;
         }
     }
 

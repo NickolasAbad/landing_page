@@ -1,10 +1,10 @@
+@use '../../styles/variaveis.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
 .skills {
 
     &__content {
-        padding: 24px 148px 48px 148px;
-        // background-color: #151515;
-        // border: 2px solid #1f1f1f;
-        // border-radius: 24px;
+        @include padding(24px, 148px, 48px, 148px);
         display: block;
     }
 
@@ -17,17 +17,12 @@
     }
 
     &__title {
-        color: #ffcc00;
-        font-size: 40px;
-        font-weight: 700;
-        text-align: center;
+        @include textStyle($corPrincipal, 40px, 700, true);
         margin-bottom: 32px;
     }
 
     &__list {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 28px;
+        @include grid-setup(6, 28px);
     }
 
     &__item {
@@ -35,9 +30,7 @@
     }
 
     &__text {
-        color: #fff;
-        font-size: 16px;
-        font-weight: 400;
+        @include textStyle($corSecundaria, 16px, 400);
         display: block;
         margin-top: 6px;
     }

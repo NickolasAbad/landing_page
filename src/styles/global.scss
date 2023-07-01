@@ -1,3 +1,8 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+// PARAMOS NO FLEX-CENTER CHAT
+// https://chat.openai.com/share/d434e2cc-f078-4432-b3ab-b1a73eb45abb
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +12,7 @@
 }
 
 body {
-    background-color: #111;
+    background-color: $corBackground;
 }
 
 .container {
@@ -20,18 +25,9 @@ a {
 }
 
 button {
-    transition: all .3s ease 0s;
+    @include transition();
     margin-top: 24px;
     height: 48px;
     width: 160px;
-    border: none;
-    background-color: #FFF;
-    color: #111;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-
-    &:hover {
-        background-color: #FFCC00;
-    }
+    @include button-style($corSecundaria, $corBackground, 16px, bold)
 }

@@ -1,14 +1,14 @@
+@use '../../styles/variaveis.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
 .header {
-    display: flex;
-    justify-content: space-between;
+    @include flex-center();
     align-items: center;
     height: 50px;
-    padding: 30px 0;
+    @include padding(30px, 0px, 30px);
 
     &__logo {
-        font-size: 24px;
-        font-weight: bold;
-        color: #fff;
+        @include textStyle($corSecundaria, 24px, bold);
         cursor: pointer;
     }
 
@@ -23,11 +23,11 @@
     }
     
     &__link {
-        transition: all .3s ease 0s;
-        color: #a7a7a7;
+        @include transition();
+        color: $corDescricao;
 
         &:hover {
-            color: #ffcc00;
+            color: $corPrincipal;
         }
     }
 
