@@ -21,6 +21,7 @@
     }
 
     &__list {
+        list-style: none;
         @include grid-setup(3, 24px) {
             display: none;
         }
