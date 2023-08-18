@@ -1,0 +1,46 @@
+@use '../../styles/variaveis.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.skills {
+
+    &__content {
+        @include padding(24px, auto, 48px, auto);
+        display: block;
+    }
+
+    &__title {
+        @include textStyle($corPrincipal, 40px, 700, true);
+        margin-bottom: 32px;
+
+        @include mq('sm') {
+            @include textStyle($corPrincipal, 32px, 700, true);
+            padding-top: 5%
+        }
+    }
+
+    &__list {
+        @include grid-setup(6, 16px);
+        padding: 0px;
+    }
+
+    &__item {
+        display: block;
+        text-align: center;
+    }
+
+    &__text {
+        @include textStyle($corSecundaria, 16px, 400);
+        display: block;
+        margin-top: 6px;
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 24px;
+
+        @include mq('sm') {
+            height: 40px;
+        }
+    }
+}

@@ -1,0 +1,143 @@
+@use '../../styles/variaveis.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.portfolio {
+    @include padding(96px, 0, 96px);
+
+    @include mq('sm') {
+        @include padding(48px, 0, 48px)
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__title {
+        @include textStyle($corPrincipal, 40px, 700, true);
+        @include absolute-position();
+        width: 100%;
+
+        @include mq('sm') {
+            @include textStyle($corPrincipal, 32px, 700, true);
+        }
+
+        
+    }
+
+    &__img {
+        margin: 2.5% auto 0 auto;
+        @include absolute-position(null, 0, null, 0);
+        text-align: center;
+
+        @include mq('lg') {
+            margin: 3.5% auto 0 auto;
+        }
+
+        @include mq('md') {
+            margin: 5% auto 0 auto;
+        }
+
+        @include mq('sm') {
+            height: 28vw;
+        }
+
+        @media screen and (max-width : 331px) {
+            display: none;
+        }
+    }
+
+    &__list {
+        padding-left: 0;
+        list-style: none;
+        @include grid-setup(3, 24px) {
+            display: none;
+        }
+        margin-top: 44px;
+
+        @media (max-width: 768px) {
+            @include grid-setup(2, 24px) {
+                display: none;
+            }
+        }
+
+        &IsActive {
+            display: grid;
+        }
+
+    }
+
+    &__item {
+        position: relative;
+        &__img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+
+        &__imgHover {
+            max-width: 100%;
+            border-radius: 4px;
+            opacity: 30%;
+        }
+    }
+
+    &__tabs {
+        @include center-align();
+        @include padding(20%);
+        gap: 10px;
+
+        @media (max-width: 768px) {
+            white-space: nowrap;
+            overflow-x: scroll;
+            @include padding(0px, 0px, 0px, 20px);
+        }
+    }
+
+    &__button {
+        @include button-style(transparent, $corBtnPort, 20px, 700, transparent);
+        @include padding(5px, 5px, 5px, 5px);
+        text-transform: uppercase;
+        border-bottom: 5px solid transparent;
+
+        @include mq('lg') {
+            margin-top: 10%
+        }
+
+        @include mq('md') {
+            margin-top: 42.5%
+        }
+
+        @include mq('sm') {
+            @include button-style(transparent, $corBtnPort, 16px, 700, transparent);
+            margin: 42.5%, 5%, 0, 5%
+        }
+
+        &IsActive {
+            @include transition(all, .5s, ease, 0s);
+            border-bottom: 5px solid $corBtnPort;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+
+        &__prof {
+            @include mq('sm') {
+                width: fit-content
+            }
+        }
+    }
+
+    &__textHover {
+        @include absolute-position(50%, null, null, 50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+    }
+
+    &__textProfissional {
+        @include textStyle($corSecundaria, 20px, 700)
+    }
+    &__descProfissional {
+        @include textStyle($corDescricao, 20px, 400)
+    }
+}

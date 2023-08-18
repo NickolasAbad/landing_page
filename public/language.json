@@ -1,0 +1,88 @@
+[   
+        { 
+            "nav_home": "início",
+            "nav_about": "sobre",
+            "nav_skills": "habilidades",
+            "nav_portfolio": "portfólio",
+
+            "home_title": "Unindo criatividade e tecnologia para criar produtos digitais de última geração para ",
+            "home_title_highlighted": "empresas visionárias",
+            "home_resume_button": "Currículo",
+            "home_contact_button": "Contato",
+
+            "who_subtitle": "Quem sou eu",
+            "who_title": "Nickolas Abad",
+            "who_description": "Desenvolvedor Frontend",
+            "who_info": "Olá! Me chamo Nickolas Abad, tenho 18 anos e moro em Florianópolis - SC. Estudante de Desenvolvimento Fullstack na EBAC. Vem conhecer um pouco mais a respeito das minhas habilidades e projetos aqui a baixo!",
+
+            "skills_title": "Habilidades",
+
+            "portfolio_title": "Portfólio de Projetos",
+
+            "portfolio_type_personal": "Pessoais",
+            "portfolio_type_professional": "Profissionais",
+            "portfolio_button": "Ver mais",
+            "portfolio_technology": "Tecnologias Utilizadas:",
+            "portfolio_view": "Veja o projeto",
+
+            "portfolio_personal_disney_title": "Clone Disney+",
+            "portfolio_personal_disney_infos": "Construção de um clone do site da Disney+.\n \n Realizada análise do estilo e padrões do site original, corrigindo problemas de incoerência de tags e font-size em alguns elementos, além de garantir a responsividade do site para dispositivos móveis \n \n",
+
+            "portfolio_personal_portfolio_title": "Meu Portfólio",
+            "portfolio_personal_portfolio_infos": "Construção de uma landing page para o meu portfólio pessoal\n \n Desenvolvimento completo, desde a criação de design no Figma até a programação do website.\n \nA landing page apresenta um cabeçalho no estilo “Hero”, uma seção “Sobre” com um card contendo minha foto pessoal e uma breve apresentação, uma seção “Habilidades” listando todas as linguagens e frameworks que possuo conhecimento e, por fim, uma seção “Portfólio”, com duas subseções: “Pessoais” e “Profissionais”, exibindo meus projetos em exposição.\n \n",
+
+            "portfolio_personal_birthday_title": "Landing Page | Aniversário",
+            "portfolio_personal_birthday_infos": "Construção de uma landing page para o meu aniversário\n \n Projeto feito para fins educacionais com o intuito de me aprofundar um pouco mais no conceito Landing Page \n \n",
+        
+            "portfolio_professional_psychologist_title": "Landing Page | Psicologia",
+            "portfolio_professional_psychologist_infos": "Construção de uma landing page pessoal com tema psicologia. \n\n Desenvolvimento completo desde a criação do design no Figma até a programação do website totalmente responsivo. \n \nA landing page apresenta um cabeçalho no estilo \"Hero\", duas seções com automações feitas através do JavaScript pela biblioteca React com o uso de Hooks e outras funcionalidades em geral, uma seção \"Sobre\" incluindo um texto e uma imagem ao lado, uma seção de postagens, na qual foram utilizados os componentes Cards do framework Bootstrap e, por fim, uma seção \"Contato\" apresentando informações relevantes de contato, como telefone e e-mail. \n \n",
+        
+            "portfolio_professional_luxury_title": "Landing Page | Casa de Luxo",
+            "portfolio_professional_luxury_infos": "Construção de uma landing page para aluguel de casa de luxo. \n \nDesenvolvimento completo desde a criação do design no Figma até a programação do websitetotalmente responsivo. \n \nA landing page apresenta um cabeçalho no estilo \"Hero\", duas seções com automações feitas através do JavaScript pela biblioteca React com o uso de Hooks e outras funcionalidades em geral, uma seção \"Sobre\" incluindo um texto e uma imagem ao lado, uma seção “Comodidades”, na qual foram utilizados os componentes Cards e uma Galeria de Fotos Interativa para cada cômodo e, por fim, uma seção \"Dicas\" utilizando o componente Accordion através da biblioteca MaterialUI \n \n",
+
+            "footer": "© Nickolas Abad 2023 - Desenvolvido por mim ❤️"
+        },
+        { 
+            "nav_home": "home",
+            "nav_about": "about",
+            "nav_skills": "skills",
+            "nav_portfolio": "portfolio",
+
+            "home_title": "Combining creativity and technology to create cutting-edge digital products for ",
+            "home_title_highlighted": "visionary companies",
+            "home_resume_button": "Resume",
+            "home_contact_button": "Contact",
+
+            "who_subtitle": "Who am i",
+            "who_title": "Nickolas Abad",
+            "who_description": "Frontend Developer",
+            "who_info": "Hello! My name is Nickolas Abad, I'm 18 years old, and I live in Florianópolis - SC. I'm a Fullstack Development student at EBAC. Come learn more about my skills and projects down below!",
+
+            "skills_title": "Skills",
+
+            "portfolio_title": "Project Portfolio",
+
+            "portfolio_type_personal": "Personal",
+            "portfolio_type_professional": "Professional",
+            "portfolio_button": "See more",
+            "portfolio_technology": "Technologies used:",
+            "portfolio_view": "View the project",
+
+            "portfolio_personal_disney_title": "Disney+ Clone",
+            "portfolio_personal_disney_infos": "Construction of a clone of the Disney+ website. \n \n I performed an analysis of the style and patterns of the original site, correcting issues with tag inconsistency and font-size in some elements, as well as ensuring the site's responsiveness for mobile devices. \n \n",
+
+            "portfolio_personal_portfolio_title": "My Own Portfolio",
+            "portfolio_personal_portfolio_infos": "Development of a landing page for my personal portfolio. \n \n Complete development, from creating the design in Figma to programming the website. \n \n The landing page features a “Hero” style header, an “About” section with a card containing my personal photo and a brief introduction, a “Skills” section listing all the languages and frameworks I'm knowledgeable in, and finally, a “Portfolio” section, with two subsections: “Personal” and “Professional,” showcasing my displayed projects.\n \n",
+
+            "portfolio_personal_birthday_title": "Landing Page | Birthday",
+            "portfolio_personal_birthday_infos": "Development of a landing page for my birthday\n \n A project made for educational purposes with the intent of delving a little deeper into the Landing Page concept \n\n",
+
+            "portfolio_professional_psychologist_title": "Landing Page | Psychologist",
+            "portfolio_professional_psychologist_infos": "Landing page development with a psychologist theme. \n \n Full development since the design creation on Figma to the fully responsive website development \n \n The landing page presents a \"Hero\" style header, two sections with automations made with JavaScript through React.js using Hooks and other features, an “About” section including a text and an image aside, a posts section utilizing the Cards component from the Bootstrap framework, and finally, a contact section with useful information. \n \n",
+
+            "portfolio_professional_luxury_title": "Landing Page | Luxury House Rent",
+            "portfolio_professional_luxury_infos": "Landing page development with a Luxury House Rent theme. \n\n Full development since the design creation on Figma to the fully responsive website development \n\n The landing page presents a \"Hero\" style header, two sections with automations made with JavaScript through React.js using Hooks and other features, an \"About\" section including a text and an image aside, a room sections, utilizing the Cards component and an interactive image gallery to each room, and finally, a tips section with an accordion component made through MaterialUI. \n \n",
+
+            "footer": "© Nickolas Abad 2023 - Developed by me ❤️"        
+        }
+]

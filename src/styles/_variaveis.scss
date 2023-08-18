@@ -1,0 +1,19 @@
+@use 'sass:map';
+
+$corPrincipal: #FFCC00;
+$corSecundaria: #FFF;
+$amareloSecundario: #FFDB49;
+$corDescricao: #A7A7A7;
+$corBackground: #111111;
+$corBorda: #1F1F1F;
+$corDivBG: #151515;
+$corBtnPort: #f9f9f9;
+$corBorderFooter: #ccc;
+$corFooter: #222;
+
+$breakpoints: (
+    'sm' : 576px,
+    'md' : 768px,
+    'lg' : 992px,
+    'xl' : 1200px
+)

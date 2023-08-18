@@ -1,0 +1,53 @@
+@use '../../styles/variaveis.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.who {
+    @include padding(0, 0, 40px);
+
+    &__content {
+        background-color: $corDivBG;
+        border: 2px solid $corBorda;
+        border-radius: 24px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        @include padding(24px, 24px, 24px, 24px);
+        @include mq('md') {
+            display: block;
+        }
+
+        @include mq('sm') {
+            margin-top: 10%;
+        }
+    }
+    
+    &__text {
+        margin-left: 24px;
+    }
+
+    &__subtitle {
+        @include textStyle($corPrincipal, 20px, 700);
+        margin-top: 24px;
+    }
+
+    &__title {
+        @include textStyle($corSecundaria, 32px, 700);
+    }
+
+    &__description {
+        @include textStyle($corSecundaria, 16px, 200);
+        margin-bottom: 16px;
+    }
+
+    &__info {
+        @include textStyle($corDescricao, 16px, 400);
+    }
+
+    &__img {
+        height: 300px;
+        border-radius: 24px;
+
+        @include mq('md') {
+            display: none;
+        }
+    }
+}

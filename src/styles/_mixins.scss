@@ -1,0 +1,81 @@
+@use 'sass:map';
+@use './variaveis.scss' as *;
+
+@mixin mq($breakpoint) {
+    @if $breakpoint == 'sm' {
+        @media (max-width: 576px) { @content; }
+    } @else if $breakpoint == 'md' {
+        @media (max-width: 768px) { @content; }
+    }
+    @else if $breakpoint == 'lg' {
+        @media (max-width: 992px) { @content; }
+    }
+    @else if $breakpoint == 'xl' {
+        @media (max-width: 1200px) { @content; }
+    } @else if $breakpoint != 'xl' and 'lg' and 'md' and 'sm' {
+        @media (max-width: $breakpoint) { @content; }
+    }
+}
+
+@mixin transition($property: all, $time: .3s, $ease: ease, $delay: 0s) {
+    transition: $property $time $ease $delay;
+}
+
+@mixin textStyle($color: #fff, $fontSize: 16px, $fontWeight: 400, $center : false) {
+    color: $color;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+
+    @if $center == true {
+        text-align: center;
+    }
+
+    @if $fontSize == 16px { 
+        @include mq('sm') {
+            font-size: 12px;
+        }
+    }
+}
+
+@mixin grid-setup($columns, $gap: 24px) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+    @content;
+}
+
+@mixin padding($top: 0, $right: 0, $bottom: 0, $left: 0) {
+    padding: $top $right $bottom $left;
+}
+
+@mixin flex-center($direction: row) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: $direction;
+}
+
+@mixin absolute-position($top: null, $right: null, $bottom: null, $left: null) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin button-style($background, $color, $fontSize, $fontWeight, $hoverBg : $corPrincipal) {
+    background-color: $background;
+    color: $color;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background-color: $hoverBg;
+    }
+}
+
+@mixin center-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
