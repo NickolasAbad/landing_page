@@ -4,6 +4,8 @@
             "nav_about": "sobre",
             "nav_skills": "habilidades",
             "nav_portfolio": "portfólio",
+            "nav_github": "github",
+            "nav_linkedin": "linkedin",
 
             "home_title": "Unindo criatividade e tecnologia para criar produtos digitais de última geração para ",
             "home_title_highlighted": "empresas visionárias",
@@ -23,7 +25,8 @@
             "portfolio_type_professional": "Profissionais",
             "portfolio_button": "Ver mais",
             "portfolio_technology": "Tecnologias Utilizadas:",
-            "portfolio_view": "Veja o projeto",
+            "portfolio_view": "Acesse o projeto",
+            "portfolio_code": "Acesse o repositório",
 
             "portfolio_personal_disney_title": "Clone Disney+",
             "portfolio_personal_disney_infos": "Construção de um clone do site da Disney+.\n \n Realizada análise do estilo e padrões do site original, corrigindo problemas de incoerência de tags e font-size em alguns elementos, além de garantir a responsividade do site para dispositivos móveis \n \n",
@@ -40,6 +43,10 @@
             "portfolio_professional_luxury_title": "Landing Page | Casa de Luxo",
             "portfolio_professional_luxury_infos": "Construção de uma landing page para aluguel de casa de luxo. \n \nDesenvolvimento completo desde a criação do design no Figma até a programação do websitetotalmente responsivo. \n \nA landing page apresenta um cabeçalho no estilo \"Hero\", duas seções com automações feitas através do JavaScript pela biblioteca React com o uso de Hooks e outras funcionalidades em geral, uma seção \"Sobre\" incluindo um texto e uma imagem ao lado, uma seção “Comodidades”, na qual foram utilizados os componentes Cards e uma Galeria de Fotos Interativa para cada cômodo e, por fim, uma seção \"Dicas\" utilizando o componente Accordion através da biblioteca MaterialUI \n \n",
 
+            "portfolio_personal_address_title": "Agenda de Contatos",
+            "portfolio_personal_address_infos": "Desenvolvimento de uma aplicação Agenda de Contatos. \n \n Potencializado com TypeScript para uma tipagem robusta e Redux Toolkit para gerenciamento de estado otimizado, esta aplicação é projetada para manter todas as suas conexões ao alcance dos dedos. As principais funcionalidades incluem gerenciamento completo de contatos, máscaras para números de telefone brasileiros, validação rigorosa das informações, incluindo validação de telefone para se encaixar no padrão brasileiro, categorização em Amigos, Familiares ou Outros, e um design totalmente responsivo. \n \n A aplicação também inclui um Drawer (menu vertical) interativo contendo todos os filtros com um contador para cada classificação, exibindo o número de contatos dentro daquelas categorias. Ao clicar em um filtro específico, apenas contatos dessa categoria serão exibidos. \n \n A interface intuitiva permite uma adição, edição ou remoção de contatos sem problemas, e busca e filtragem rápidas por nome ou telefone, tornando o gerenciamento de seus contatos fácil e eficiente. \n \n",
+
+
             "footer": "© Nickolas Abad 2023 - Desenvolvido por mim ❤️"
         },
         { 
@@ -47,6 +54,8 @@
             "nav_about": "about",
             "nav_skills": "skills",
             "nav_portfolio": "portfolio",
+            "nav_github": "github",
+            "nav_linkedin": "linkedin",
 
             "home_title": "Combining creativity and technology to create cutting-edge digital products for ",
             "home_title_highlighted": "visionary companies",
@@ -66,7 +75,8 @@
             "portfolio_type_professional": "Professional",
             "portfolio_button": "See more",
             "portfolio_technology": "Technologies used:",
-            "portfolio_view": "View the project",
+            "portfolio_view": "Access the project",
+            "portfolio_code": "Access the repository",
 
             "portfolio_personal_disney_title": "Disney+ Clone",
             "portfolio_personal_disney_infos": "Construction of a clone of the Disney+ website. \n \n I performed an analysis of the style and patterns of the original site, correcting issues with tag inconsistency and font-size in some elements, as well as ensuring the site's responsiveness for mobile devices. \n \n",
@@ -82,6 +92,10 @@
 
             "portfolio_professional_luxury_title": "Landing Page | Luxury House Rent",
             "portfolio_professional_luxury_infos": "Landing page development with a Luxury House Rent theme. \n\n Full development since the design creation on Figma to the fully responsive website development \n\n The landing page presents a \"Hero\" style header, two sections with automations made with JavaScript through React.js using Hooks and other features, an \"About\" section including a text and an image aside, a room sections, utilizing the Cards component and an interactive image gallery to each room, and finally, a tips section with an accordion component made through MaterialUI. \n \n",
+
+            "portfolio_personal_address_title": "Contact Address Book",
+            "portfolio_personal_address_infos": "Development of a Contact Address Book application. \n \n Enhanced with TypeScript for robust typing and Redux Toolkit for optimal state management, this application is designed to keep all your connections within reach. Key features include complete contact management, masks for Brazilian phone numbers, strict information validation, including phone validation to fit the Brazilian standard, categorization into Friends, Family, or Others, and a fully responsive design. \n \n The application also includes an interactive drawer containing all the filters with a counter for each classification, displaying the number of contacts within those categories. By clicking on a specific filter, only contacts from that category will be displayed. \n \n The intuitive user interface allows for seamless addition, editing, or removal of contacts and rapid search and filtering by name or phone, making your contact management effortless and efficient. \n \n",
+
 
             "footer": "© Nickolas Abad 2023 - Developed by me ❤️"        
         }

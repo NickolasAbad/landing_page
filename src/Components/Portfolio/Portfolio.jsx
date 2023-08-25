@@ -2,6 +2,7 @@
 import styles from './index.module.scss'
 import memojiImg from './assets/Memoji.png'
 import clone from './assets/clone_disney+.png'
+import agenda from './assets/agenda.png'
 import landing from './assets/landing_page.png'
 import thayse from './assets/thayse.jpeg'
 import trancoso from './assets/trancoso.jpeg'
@@ -19,6 +20,7 @@ const Portfolio = (props) => {
     const [hoverPessoais0, setHoverPessoais0] = useState(false)
     const [hoverPessoais1, setHoverPessoais1] = useState(false)
     const [hoverPessoais2, setHoverPessoais2] = useState(false)
+    const [hoverPessoais3, setHoverPessoais3] = useState(false)
     const [hoverProfissionais0, setHoverProfissionais0] = useState(false)
     const [hoverProfissionais1, setHoverProfissionais1] = useState(false)
     const [profWidth, setProfWidth] = useState(0)
@@ -63,6 +65,7 @@ const Portfolio = (props) => {
             infos: (<>{props.isEnglish ? language[1].portfolio_personal_disney_infos : language[0].portfolio_personal_disney_infos}</>),
             tecnologias: ['HTML', 'SCSS', 'JavaScript', 'Gulp'],
             link: 'https://clone-disneyplus-oficial-nickolasabad.vercel.app/',
+            code: 'https://github.com/NickolasAbad/clone_disneyplus',
             hover: hoverPessoais0,
             setHover: setHoverPessoais0,
         },
@@ -72,6 +75,7 @@ const Portfolio = (props) => {
             infos: (<>{props.isEnglish ? language[1].portfolio_personal_portfolio_infos : language[0].portfolio_personal_portfolio_infos}</>),
             tecnologias: ['HTML', 'SCSS', 'JavaScript', 'React', 'Bootstrap', 'Vite'],
             link: 'https://bit.ly/nickolasabad',
+            code: 'https://github.com/NickolasAbad/landing_page',
             hover: hoverPessoais1,
             setHover: setHoverPessoais1,
         },
@@ -81,8 +85,19 @@ const Portfolio = (props) => {
             infos: (<>{props.isEnglish ? language[1].portfolio_personal_birthday_infos : language[0].portfolio_personal_birthday_infos}</>),
             tecnologias: ['HTML', 'SCSS', 'JavaScript', 'Parcel'],
             link: 'https://landing-page-aniversario-iota.vercel.app/',
+            code: 'https://github.com/NickolasAbad/landing_page_aniversario',
             hover: hoverPessoais2,
             setHover: setHoverPessoais2,
+        },
+        {
+            title: (<>{props.isEnglish ? language[1].portfolio_personal_address_title : language[0].portfolio_personal_address_title}</>),
+            img: agenda,
+            infos: (<>{props.isEnglish ? language[1].portfolio_personal_address_infos : language[0].portfolio_personal_address_infos}</>),
+            tecnologias: ['React', 'Redux', 'MaterialUI', 'TypeScript', 'Vite'],
+            link: 'https://agenda-de-contatos-ten-delta.vercel.app/',
+            code: 'https://github.com/NickolasAbad/agenda_de_contatos',
+            hover: hoverPessoais3,
+            setHover: setHoverPessoais3,
         },
     ]
 
@@ -148,6 +163,9 @@ const Portfolio = (props) => {
                                             </b>
                                             </Modal.Body>
                                             <Modal.Footer>
+                                              <Button variant="dark" href={project.code} target='_blank'>
+                                                {props.isEnglish ? language[1].portfolio_code : language[0].portfolio_code}
+                                              </Button>
                                               <Button variant="warning" href={project.link} target='_blank'>
                                                 {props.isEnglish ? language[1].portfolio_view : language[0].portfolio_view}
                                               </Button>
